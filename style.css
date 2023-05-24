@@ -3,8 +3,9 @@
     --main-color: black;
     --sidebar-bg-color: rgb(5, 120, 155);
     --sidebar-color: rgb(255, 255, 255);
-    --upper-bg-color: white;
+    --header-bg-color: white;
     --upper-color: black;
+    --header-svg-color:rgb(5, 120, 155);
 
     --light-theme-shadow:rgba(255, 255, 255, 0.4);
     --menu-scale: scale(1.1);
@@ -54,8 +55,15 @@ body{
     width: 20px;
     height: 20px;
     fill: var(--sidebar-color);
-    
 }
+.header_svg{
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    fill: var(--sidebar-bg-color);
+}
+
 .titles{
     display: inline;
 }
@@ -82,14 +90,14 @@ body{
     grid-row: 1;
     display: grid;
     grid-template-rows: 0.5fr 0.5fr;
-    background-color: var(--upper-bg-color);
+    background-color: var(--header-bg-color);
 }
 .wrapper-header1{
     grid-column: 1;
     grid-row: 1;
     display: flex;
     justify-content: space-between;
-    background-color: var(--upper-bg-color);
+    background-color: inherit;
 }
 .search{
     flex: 1;
@@ -110,7 +118,7 @@ body{
     grid-column: 1;
     grid-row: 2;
     display: flex;
-    background-color: var(--upper-bg-color);
+    background-color: inherit;
 }
 .info{
     flex: 1;
