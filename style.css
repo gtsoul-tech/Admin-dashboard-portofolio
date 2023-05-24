@@ -210,7 +210,7 @@ input[type="radio"] {
     background-color: inherit;
     color: inherit;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(250px,3fr));
+    grid-template-columns: repeat(auto-fill,minmax(450px,3fr));
     gap: 10px;
 }
 .project{
@@ -222,7 +222,36 @@ input[type="radio"] {
     border-radius: 25px;
     box-shadow: -5px 0px 0px 0px var(--second-bg-color);
 }
+.project img{
+    box-shadow: 3px 3px 2px 0px rgba(145, 145, 145, 0.75) ;
+}
+.project div{
+    align-self: flex-end;
+}
 .wrapper-right-bar{
     display: flex;
     flex-direction: column;
 }
+.announcements{
+    display: grid;
+    grid-template-columns: minmax(100px,200px);
+    grid-row: repeat(3,1fr);
+    padding: 10px;
+    background-color: var(--sidebar-color);
+    border-radius: 25px;
+    box-shadow:5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+.announcement{
+    border-bottom: 2px solid black;
+}
+.trendings{
+    display: grid;
+    grid-template-columns: 40px,1fr;
+    grid-template-rows: repeat(4,40px);
+    grid-auto-flow: column;
+    padding: 10px;
+    background-color: var(--sidebar-color);
+    border-radius: 25px;
+    box-shadow:5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
