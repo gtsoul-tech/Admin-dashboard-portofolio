@@ -11,3 +11,8 @@ squareLogo.addEventListener("click", ()=> {
     }}
     );
 })
+
+
+//let element = document.querySelector(':root');
+//element.style.setProperty("--sidebar-bg-color", '#014d4e');
+//element.style.setProperty("--sidebar-color", '#black');
