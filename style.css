@@ -31,6 +31,7 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    
     padding-top: 5px;
     text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
 }
@@ -43,6 +44,10 @@ body{
     align-items: center;
     color: var(--sidebar-color);
 }
+#square_logo{
+    width: 40px;
+    height: 40px;
+}
 .theme_svg{
     padding: 0;
     margin: 0;
@@ -54,7 +59,9 @@ body{
 .titles{
     display: inline;
 }
-
+.menu{
+    padding: 10px;
+}
 .menu:hover{
     filter: drop-shadow(3px 5px 2px var(--light-theme-shadow));
     transform: var(--menu-scale);
