@@ -1,17 +1,19 @@
 :root {
+    font-size: 16px;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    
+}
+
+.light_theme{
     --sidebar-bg-color: rgb(5, 120, 155);
     --sidebar-color: white;
     --second-bg-color:orange;
     --upper-color: black;
     --light-theme-shadow:rgba(255, 255, 255, 0.4);
-    font-size: 16px;
-    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
-
     --main-bg-color:lightgrey;
     --white-to-grey:white;
 }
-
-:root {
+.dark_theme {
     --sidebar-bg-color: orange; /*teal*/
     --sidebar-color: #121212; /*white*/
     --second-bg-color:rgb(5, 120, 155);/*orange*/
@@ -59,6 +61,8 @@ body{
     width: 2.4rem;
     height: 2.4rem;
 }
+
+
 .theme_svg{
     padding: 0;
     margin: 0;
@@ -73,8 +77,17 @@ body{
     height: 2rem;
     fill: var(--sidebar-bg-color);
 }
-input[type="checkbox"] {
-    display: none;
+.header_svg#moon{
+    fill: var(--sidebar-bg-color);
+}
+
+.header_svg#sun{
+    fill: var(--second-bg-color);
+}
+
+.header_svg:hover{
+    transform: rotate(360deg) translate(0px, 0px) scale(1.3, 1.3);
+    transition: transform 1s ease-out;
 }
 label {
   cursor: pointer;
@@ -82,6 +95,15 @@ label {
 }
 input[type="radio"] {
     display: none;
+}
+#light, #dark{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 .titles{
